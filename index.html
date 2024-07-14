@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+      <title>React Blog</title>
+      <script src="posts.html" type="text/javascript"></script>
+      <link rel="stylesheet" href="%PUBLIC_URL%/styles.css" />
+  
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+<script>
+        const hardcodedPosts = [
+        {
+        "title": "About me",
+        "content": "Hiii! I'm Xin. I am a raising sophmore at Binghamton University, but I am majoring in Business Administration (not CS). So while I know some things about coding, I am honestly guessing my way though this right now. I love listening to new songs, watching random movies/tv shows, and hanging out with friedns. (Keshi released a new song on the same day as Jojo Siwa 0.0)\n I don't really know what to make a blog about, my life if pretty boring. So I thought I would give you a day in my life, cause that's all I can think of at the moment.",
+        "author": "me",
+        "id": 1
+      },
+      {
+        "title": "Please Help - reminders about how to use react ;-;",
+        "content": "I saw that in order to open up vs code, I had to open the app and install the shell command. (uninstall and reinstall each time I open a react app). \n Also I am not sure why, but adding the router is breaking my laptop. I got over 100 vulnerabilites (14 being critical). So idk how to go about that. \n But anyway... I got the free fries at McDonalds but they ran out of the jjk sauce. Other than that, I am currently working at Aliamam Tea where I spend my days making drinks and serving mochi donuts and creme puffs. Feel free to come for a 20% discount! I didn't really do much else besides cramming this blog at night :(",
+        "author": "me",
+        "id": 2
+      }
+    ];
+    localStorage.setItem('posts', JSON.stringify(hardcodedPosts));
+    </script>
+   </body>
+   </html>
